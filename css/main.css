@@ -1,0 +1,1111 @@
+/*  ================================
+    Start The Beginning Of The Rules
+    ================================ */
+
+:root {
+    /* --main-color: #1687a7; */
+    --main-color: #536162;
+    --second-color: rgba(83, 97, 98, 0.5);
+}
+
+body {
+    font-family: 'Lateef';
+    position: relative
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff !important
+}
+
+/*  ==============================
+    End The Beginning Of The Rules
+    ============================== */
+
+.bakhome {
+    position: fixed;
+    top: 35%;
+    left: -120px;
+    z-index: 99999;
+    transition: .5s
+}
+
+.bakhome:hover {
+    left: 0
+}
+
+.bakhome a {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-decoration: none
+}
+
+.bakhome a i {
+    position: relative;
+    top: 4px;
+    left: 3px
+}
+
+/* Start Index */
+
+.index {
+    direction: rtl;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    min-height: 100%;
+    position: relative
+}
+
+.index .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7)
+}
+
+.index .box-index {
+    padding: 50px 0
+}
+
+.index .info .img img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%
+}
+
+.index .info .linkHome a {
+    text-decoration: none;
+    background-color: var(--second-color);
+    border: 2px solid var(--second-color);
+    color: #fff;
+    padding: 2px 35px;
+    font-size: 30px;
+    transition: .5s
+}
+
+.index .info .linkHome a:hover {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.index .info .social {
+    padding: 0;
+    margin: 20px 0 0
+}
+
+.index .info .social p {
+    color: #fff;
+    font-size: 25px
+}
+
+.index .info .social li {
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    color: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 3px;
+    border-radius: 50px
+}
+
+.index .info .social li:hover {
+    color: var(--main-color);
+    border: 2px solid var(--main-color)
+}
+
+.index .links {
+    padding: 30px 0px;
+    margin: 0;
+    margin-top: 20px;
+    background: var(--second-color)
+}
+
+.index .links p {
+    color: #fff;
+    font-size: 40px
+}
+
+.index .links li {
+    display: inline-block;
+    margin: 15px 30px;
+    border: 2px solid var(--main-color);
+    padding: 5px 0;
+    font-size: 25px;
+    width: 30%;
+    transition: .5s
+}
+
+.index .links li a {
+    color: #fff;
+    text-decoration: none
+}
+
+.index .links li.qiz {
+    animation-name: scale;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+@keyframes scale {
+    100% {
+        transform: scale(1.1);
+        background-color: var(--main-color);
+        border: 2px solid var(--main-color)
+    }
+}
+
+.index .links li:hover {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color)
+}
+
+/* End Index */
+
+/* Start Home */
+
+.home {
+    direction: rtl;
+    background: #f7f7f7
+}
+
+.home .info {
+    padding: 80px 0 30px
+}
+
+.home .info h2 {
+    border: 5px solid var(--second-color);
+    width: 20%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 35px
+}
+
+.home .info p {
+    color: #777;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: right
+}
+
+.home .myfriend {
+    margin: 0 0 40px;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    background-color: #fff
+}
+
+.home .myfriend .text-friend h3 {
+    margin: 0 0 7px;
+    color: var(--main-color)
+}
+
+.home .myfriend .text-friend p {
+    padding: 2px 0;
+    margin: 0;
+    font-size: 24px
+}
+
+.home .myfriend .text-friend p i {
+    position: relative;
+    top: 4px;
+    color: var(--main-color)
+}
+
+.home .myfriend .img-friend img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    padding: 3px;
+    border-radius: 7px;
+    border: 1px solid #e1e1e1;
+    margin: auto
+}
+
+.home .question {
+    margin-top: 30px
+}
+
+.home .question h2 {
+    margin: 0 0 15px;
+    padding: 10px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 27px;
+}
+
+.home .question .quiz {
+    padding: 0;
+    margin: 0;
+    font-size: 24px
+}
+
+.home .question .quiz li {
+    border-bottom: 1px solid #f3f3f3;
+    width: 100%;
+    padding: 5px 0;
+    color: #777
+}
+
+.home .question .quiz li:last-child {
+    border: 0
+}
+
+.home .question .quiz li i {
+    color: var(--main-color);
+    position: relative;
+    top: 1px;
+    font-size: 18px
+}
+
+.home .question p {
+    color: #777;
+    font-size: 29px
+}
+
+.home .allahAkbr {
+    background-color: var(--main-color);
+    padding: 10px;
+    font-size: 35px;
+    margin-top: 40px
+}
+
+.home .allahAkbr a {
+    text-decoration: none;
+    color: #fff
+}
+
+.home .allahAkbr a:hover {
+    color: #e0e0e0
+}
+
+/* End Home */
+
+/* Start Other */
+
+.other {
+    direction: rtl;
+}
+
+.other .info {
+    padding: 80px 0 30px
+}
+
+.other .info h2 {
+    border: 5px solid var(--second-color);
+    width: 30%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 35px
+}
+
+.other .Otheer {
+    margin: 30px 0
+}
+
+.other .Otheer h2 {
+    margin: 0 0 15px;
+    padding: 10px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 27px
+}
+
+.other .day {
+    padding: 30px 0
+}
+
+.other .day .ra-day {
+    margin-bottom: 25px
+}
+
+.other .day .ra-day table {
+    width: 100%
+}
+
+.other .day .ra-day table tr:nth-child(even) {
+    background-color: #f7f7f7
+}
+
+.other .day .ra-day table th {
+    border: 1px solid #f7f7f7;
+    padding: 10px;
+    text-align: center;
+    background-color: #f7f7f7
+}
+
+.other .day .ra-day table td {
+    font-size: 18px;
+    border: 1px solid #f7f7f7;
+    padding: 10px 20px;
+    font-weight: bold
+}
+
+.other .day .ra-day h4 {
+    margin: 0 0 15px;
+    font-weight: bold
+}
+
+.other .day .ra-day img {
+    display: block;
+    max-width: 100%
+}
+
+.other .day .ra-day a {
+    border: 2px solid var(--main-color);
+    background: var(--main-color);
+    color: #fff;
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+    font-size: 30px
+}
+
+.other .eid {
+    background: #f7f7f7;
+    padding: 20px
+}
+
+.other .eid p {
+    margin: 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 22px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #777
+}
+
+.other .eid p:last-child {
+    border-bottom: 0
+}
+
+.other .eid p i {
+    font-size: 18px;
+    color: var(--main-color);
+    position: relative;
+    top: 4px
+}
+
+/* End Other */
+
+/* Start Prayer */
+
+.prayer {
+    direction: rtl;
+    background: #f7f7f7
+}
+
+.prayer .info {
+    padding-top: 80px;
+    margin-bottom: 50px
+}
+
+.prayer .info h2 {
+    border: 5px solid var(--second-color);
+    width: 20%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 35px
+}
+
+.prayer .info p {
+    color: #777;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: right
+}
+
+.prayer .text-prayer {
+    padding: 40px 0
+}
+
+.prayer .text-prayer .help {
+    border: 1px solid #e1e1e1;
+    color: #000;
+    position: relative;
+    padding: 0 0 20px;
+    margin-bottom: 35px;
+    background: #fff
+}
+
+.prayer .text-prayer .help span {
+    display: block;
+    position: absolute;
+    top: -23px;
+    right: -1px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--main-color);
+    font-family: 'Yeon Sung'
+}
+
+.prayer .text-prayer .help h4 {
+    margin: 20px 0 3px;
+    font-size: 30px;
+    color: #777
+}
+
+.prayer .text-prayer .help p {
+    font-size: 30px;
+    margin: 0
+}
+
+/* End Prayer */
+
+/* Start Remembrance */
+
+.remembrance {
+    direction: rtl;
+    background: #f7f7f7
+}
+
+.remembrance .info {
+    padding-top: 80px;
+    margin-bottom: 50px
+}
+
+.remembrance .info h2 {
+    border: 5px solid var(--second-color);
+    width: 20%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 35px
+}
+
+.remembrance .info p {
+    color: #777;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: right
+}
+
+.remembrance .text-remembrance {
+    padding: 40px 0
+}
+
+.remembrance .text-remembrance .rember {
+    border: 1px solid #e1e1e1;
+    color: #000;
+    position: relative;
+    padding: 20px 25px;
+    margin-bottom: 35px;
+    background: #fff
+}
+
+.remembrance .text-remembrance .rember span {
+    display: block;
+    position: absolute;
+    top: -22px;
+    right: -1px;
+    width: 100px;
+    height: 40px;
+    line-height: 43px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--main-color);
+    font-family: 'Yeon Sung'
+}
+
+.remembrance .text-remembrance .rember p {
+    font-size: 30px;
+    margin: 0
+}
+
+/* End Remembrance */
+
+/* Start Provisions */
+
+.provisions {
+    direction: rtl;
+    background: #f7f7f7
+}
+
+.provisions .info {
+    padding-top: 80px;
+    margin-bottom: 50px
+}
+
+.provisions .info h2 {
+    border: 5px solid var(--second-color);
+    width: 20%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 35px
+}
+
+.provisions .info p {
+    color: #777;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: right
+}
+
+.provisions .text-provisions {
+    padding: 40px 0
+}
+
+.provisions .text-provisions .pro {
+    border: 1px solid #e1e1e1;
+    color: #000;
+    position: relative;
+    padding: 20px 25px;
+    margin-bottom: 35px;
+    background: #fff
+}
+
+.provisions .text-provisions .pro span {
+    display: block;
+    position: absolute;
+    top: -22px;
+    right: -1px;
+    width: 100px;
+    height: 40px;
+    line-height: 43px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--main-color);
+    font-family: 'Yeon Sung'
+}
+
+.provisions .text-provisions .pro p {
+    font-size: 30px;
+    margin: 0
+}
+
+/* End Provisions */
+
+/* Start Pref */
+
+.pref {
+    direction: rtl;
+    background: #f7f7f7
+}
+
+.pref .info {
+    padding-top: 80px;
+    margin-bottom: 50px
+}
+
+.pref .info h2 {
+    border: 5px solid var(--second-color);
+    width: 20%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 35px
+}
+
+.pref .info p {
+    color: #777;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: right
+}
+
+.pref .text-pref {
+    padding: 40px 0
+}
+
+.pref .text-pref .pre {
+    border: 1px solid #e1e1e1;
+    color: #000;
+    position: relative;
+    padding: 20px 25px;
+    margin-bottom: 35px;
+    background: #fff
+}
+
+.pref .text-pref .pre span {
+    display: block;
+    position: absolute;
+    top: -22px;
+    right: -1px;
+    width: 100px;
+    height: 40px;
+    line-height: 43px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--main-color);
+    font-family: 'Yeon Sung'
+}
+
+.pref .text-pref .pre p {
+    font-size: 30px;
+    margin: 0
+}
+
+/* End Pref */
+
+/* Start Benefits */
+
+.benefits {
+    direction: rtl;
+    background: #f7f7f7
+}
+
+.benefits .info {
+    padding-top: 80px;
+    margin-bottom: 50px
+}
+
+.benefits .info h2 {
+    border: 5px solid var(--second-color);
+    width: 20%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 35px
+}
+
+.benefits .info p {
+    color: #777;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: right
+}
+
+.benefits .text-benefits {
+    padding: 40px 0
+}
+
+.benefits .text-benefits .ben {
+    border: 1px solid #e1e1e1;
+    color: #000;
+    position: relative;
+    padding: 20px 25px;
+    margin-bottom: 35px;
+    background: #fff
+}
+
+.benefits .text-benefits .ben span {
+    display: block;
+    position: absolute;
+    top: -22px;
+    right: -1px;
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--main-color)
+}
+
+.benefits .text-benefits .ben p {
+    font-size: 30px;
+    margin: 0
+}
+
+/* End Benefits */
+
+/* Start Tips */
+
+.tips {
+    direction: rtl;
+    background: #f7f7f7
+}
+
+.tips .info {
+    padding-top: 80px;
+    margin-bottom: 50px
+}
+
+.tips .info h2 {
+    border: 5px solid var(--second-color);
+    width: 20%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 35px
+}
+
+.tips .info p {
+    color: #777;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: right
+}
+
+.tips .text-tips {
+    padding: 40px 0
+}
+
+.tips .text-tips .tip {
+    border: 1px solid #e1e1e1;
+    color: #000;
+    position: relative;
+    padding: 20px 25px;
+    margin-bottom: 35px;
+    background: #fff
+}
+
+.tips .text-tips .tip span {
+    display: block;
+    position: absolute;
+    top: -22px;
+    right: -1px;
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--main-color)
+}
+
+.tips .text-tips .tip p {
+    font-size: 30px;
+    margin: 0
+}
+
+/* End Tips */
+
+/* Start Quize */
+
+.quizapp {
+    padding: 80px 0 40px;
+    direction: rtl;
+    background: url(../img/banner.jpg) fixed;
+    background-size: cover;
+    min-height: 100%;
+    position: relative
+}
+
+.quizapp .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+.quizapp .quiz-info {
+    position: relative;
+    z-index: 2
+}
+
+.quizapp .quiz-info .category {
+    background: var(--main-color);
+    color: #fff;
+    padding: 7px 0;
+    font-size: 25px
+}
+
+.quizapp .quiz-info .couNt {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Yeon Sung', 'Lateef';
+}
+
+.quizapp .quiz-info .Quiz-area h2 {
+    background: var(--main-color);
+    color: #fff;
+    padding: 20px 25px;
+    font-size: 30px
+}
+
+.quizapp .quiz-info .answrs-area {
+    margin: 30px 0
+}
+
+.quizapp .quiz-info .answrs-area .answer {
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: bold
+}
+
+.quizapp .quiz-info .answrs-area .answer:not(:last-child) {
+    border-bottom: 2px solid var(--second-color)
+}
+
+.quizapp .quiz-info .answrs-area .answer input[type="radio"]:checked+label {
+    color: #fff
+}
+
+.quizapp .quiz-info .answrs-area .answer label {
+    cursor: pointer;
+    color: #fff;
+    margin-right: 5px;
+    font-family: 'Yeon Sung', 'Lateef'
+}
+
+.quizapp .quiz-info button {
+    background: #81b214;
+    border: 2px solid #81b214;
+    outline: none;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 25px;
+    width: 15%
+}
+
+.quizapp .quiz-info .bullets {
+    position: relative
+}
+
+.quizapp .quiz-info .bullets .countDown {
+    font-family: 'Yeon Sung';
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    outline: none;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 25px;
+    width: 15%;
+    position: absolute;
+    top: -51px;
+    left: 0;
+    direction: ltr;
+    text-align: center
+}
+
+.quizapp .quiz-info .bullets .spans-cont .on {
+    background-color: var(--main-color)
+}
+
+.quizapp .quiz-info .result span {
+    display: block;
+    padding: 15px;
+    font-size: 25px
+}
+
+.quizapp .quiz-info .result span.bad {
+    background-color: #ce1212;
+    color: #fff
+}
+
+.quizapp .quiz-info .result span.good {
+    background-color: #81b214;
+    color: #fff
+}
+
+.quizapp .quiz-info .result span.prefect {
+    background-color: #fddb3a;
+    color: #000
+}
+
+/* End Quize */
+
+/* Start Form Contact */
+
+.form-contact {
+    padding: 80px 0;
+    direction: rtl;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    min-height: 100%;
+    position: relative
+}
+
+.form-contact .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7)
+}
+
+.form-contact .info {
+    position: relative;
+    z-index: 2
+}
+
+.form-contact .info img {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 50%;
+    max-width: 400px
+}
+
+.form-contact .info h1 {
+    margin: 0 auto 15px;
+    padding: 15px 10px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 30px;
+    width: 300px
+}
+
+.form-contact .info p {
+    color: #fff;
+    font-size: 27px
+}
+
+.form-contact .info .error {
+    background-color: #e84545;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+    border-left: 4px solid #810000;
+    border-right: 5px solid #810000;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    max-width: 700px;
+    margin: 25px auto 25px;
+    color: #fff;
+    font-size: 20px
+}
+
+.form-contact .alert-success {
+    color: #fff;
+    background: var(--main-color);
+    width: 40%;
+    margin: 30px auto 20px;
+    border-radius: 0;
+    font-size: 25px;
+    border-color: var(--second-color);
+}
+
+.form {
+    max-width: 700px;
+    margin: 10px auto
+}
+
+.form-contact .form-group {
+    margin-bottom: 0;
+    position: relative
+}
+
+.form-control {
+    padding: 25px 33px;
+    border: 2px solid var(--second-color) !important;
+    font-size: 24px;
+    font-family: 'Yeon Sung', 'Lateef';
+    background: var(--second-color) !important;
+    box-shadow: none !important;
+    color: #fff !important
+}
+
+.form i {
+    height: 0;
+    color: #fff;
+    position: relative;
+    top: 18px;
+    right: 10px;
+    float: right;
+    z-index: 1
+}
+
+.form input, .form textarea {
+    margin-bottom: 10px;
+    border-radius: 4px
+}
+
+.form textarea {
+    padding-top: 12px;
+    resize: none;
+    height: 200px !important
+}
+
+.form input:not([type="submit"]):focus::placeholder, .form textarea:focus::placeholder {
+    opacity: 0
+}
+
+::placeholder {
+    color: #fff !important
+}
+
+.form .form-group .asterisx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: #fff
+}
+
+.form .btn-success, .form .btn-success:hover, .form .btn-success:focus {
+    border-radius: 0 !important;
+    background: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    box-shadow: none !important;
+    width: 150px;
+    float: right;
+    display: block;
+    margin-top: 10px;
+    padding: 5px 25px;
+    font-size: 24px;
+    z-index: 2;
+    position: relative
+}
+
+/* End Form Contact */
+
+/* Start Scroll Top */
+
+#scroll-top {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    right: 25px;
+    bottom: 10%;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 3;
+    border-right: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    outline: 4px solid var(--main-color);
+    background-color: var(--main-color)!important
+}
+
+/* End Scroll Top */
+
+/* Start Footer */
+
+.footer {
+    background-color: #fff;
+    color: #000;
+    padding: 15px 0 5px;
+    direction: rtl;
+    border-top: 1px solid var(--second-color)
+}
+
+.footer h2 {
+    margin: 0 0 5px;
+    font-size: 24px;
+    font-family: 'Yeon Sung', 'Lateef'
+}
+
+.footer h2 strong {
+    color: var(--main-color)
+}
+
+.footer p {
+    margin: 15px auto 0;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    font-size: 27px;
+    width: 30%;
+    border-radius: 5px;
+    border: 2px solid var(--second-color)
+}
+
+.footer p a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Yeon Sung'
+}
+
+.footer p a:hover {
+    color: #757575
+}
+
+/* End Footer */

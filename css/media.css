@@ -1,0 +1,114 @@
+/* Smart Phones And Tablets */
+
+@media (max-width:767px) {
+    .home .info h2, .prayer .info h2, .remembrance .info h2, .provisions .info h2, .pref .info h2, .benefits .info h2, .tips .info h2 {
+        width: 65%
+    }
+    .prayer .info p, .remembrance .info p, .provisions .info p, .pref .info p, .benefits .info p, .tips .info p {
+        font-size: 27px
+    }
+    .home .info p {
+        font-size: 24px
+    }
+    .index .links li {
+        width: 40%;
+        margin: 10px
+    }
+    .other .info h2 {
+        width: 95%
+    }
+    .other .day .ra-day table th {
+        padding: 8px 0
+    }
+    .other .day .ra-day table td {
+        padding: 8px 5px
+    }
+    .footer h2 {
+        font-size: 21px
+    }
+    .footer p {
+        width: 85%
+    }
+    .quizapp .quiz-info .bullets .countDown {
+        width: 40%
+    }
+    .prayer .text-prayer .help {
+        padding: 0 10px 20px
+    }
+    .prayer .text-prayer .help p, .benefits .text-benefits .ben p, .tips .text-tips .tip p, .provisions .text-provisions .pro p, .remembrance .text-remembrance .rember p, .pref .text-pref .pre p {
+        font-size: 25px
+    }
+    .quizapp .quiz-info .answrs-area .answer label {
+        font-size: 20px
+    }
+    .quizapp .quiz-info button {
+        width: 40%
+    }
+    .form-contact .info img {
+        max-width: 300px
+    }
+}
+
+/* Small Screen */
+
+@media (min-width:769px) and (max-width:991px) {
+    .home .info h2, .prayer .info h2, .remembrance .info h2, .provisions .info h2, .pref .info h2, .benefits .info h2, .tips .info h2 {
+        width: 30%
+    }
+    .home .info p, .prayer .info p, .remembrance .info p, .provisions .info p, .pref .info p, .tips .info p {
+        font-size: 27px;
+        width: 100%;
+    }
+    .prayer .text-prayer .help span {
+        left: 47%
+    }
+    .other .info h2 {
+        width: 45%
+    }
+    .footer p {
+        width: 55%
+    }
+    .quizapp .quiz-info .bullets .countDown {
+        width: 20%
+    }
+    .index .links li {
+        width: 31%
+    }
+    .prayer .text-prayer .help {
+        padding: 0 10px 20px
+    }
+    .prayer .text-prayer .help p, .benefits .text-benefits .ben p, .tips .text-tips .tip p, .provisions .text-provisions .pro p, .remembrance .text-remembrance .rember p, .pref .text-pref .pre p {
+        font-size: 25px
+    }
+    .quizapp .quiz-info .answrs-area .answer label {
+        font-size: 20px
+    }
+    .quizapp .quiz-info button {
+        width: 25%
+    }
+    .bakhome {
+        left: -125px
+    }
+}
+
+/* Medium Screen */
+
+@media (min-width:992px) and (max-width:1199px) {
+    .home .info h2, .prayer .info h2, .remembrance .info h2, .provisions .info h2, .pref .info h2, .benefits .info h2, .tips .info h2 {
+        width: 30%
+    }
+    .index .links li {
+        margin: 15px 20px;
+        width: 35%
+    }
+    .prayer .text-prayer .help {
+        padding: 0 20px 20px
+    }
+    .quizapp .quiz-info button {
+        width: 20%
+    }
+}
+
+/* Large Screen */
+
+@media (min-width:1200px) {}
